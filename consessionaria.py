@@ -51,7 +51,7 @@ def moto():
         if modelo1["moto"] == marca["moto"] and modelo1["marca"] == marca["marca"]:
             return {"status": "veiculo já cadastrado."}
     marca = {
-        "chassi": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "moto": marca["moto"],
         "cor":marca["cor"],
         "marca":marca["marca"]
@@ -64,7 +64,7 @@ def excluir_moto():
     delete = request.json
     print(moto160)
     for dell in moto160:
-        if dell["chassi"] == delete["chassi"]:
+        if dell["id"] == delete["id"]:
             moto160.remove(dell)
             return delete
 
@@ -77,7 +77,7 @@ def motores():
         if modelo2["moto"] == marca1["moto"] and modelo2["marca"] == marca1["marca"]:
             return {"status": "veiculo já cadastrado."}
     marca1 = {
-        "chassi": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "moto": marca1["moto"],
         "cor":marca1["cor"],
         "marca":marca1["marca"]
@@ -90,7 +90,7 @@ def excluir250():
     delete = request.json
     print(moto250)
     for dell in moto250:
-        if dell["chassi"] == delete["chassi"]:
+        if dell["id"] == delete["id"]:
             moto250.remove(dell)
             return delete
 
@@ -103,7 +103,7 @@ def motores300():
         if modelo3["moto"] == marca2["moto"] and modelo3["marca"] == marca2["marca"]:
             return {"status": "veiculo já cadastrado."}
     marca2= {
-        "chassi": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "moto": marca2["moto"],
         "cor":marca2["cor"],
         "marca":marca2["marca"]
@@ -116,7 +116,7 @@ def excluir300():
     delete = request.json
     print(moto300)
     for dell in moto300:
-        if dell["chassi"] == delete["chassi"]:
+        if dell["id"] == delete["id"]:
             moto300.remove(dell)
             return delete
 
@@ -130,7 +130,7 @@ def motores600():
         if modelo4["moto"] == marca3["moto"] and modelo4["marca"] == marca3["marca"]:
             return {"status": "veiculo já cadastrado."}
     marca3= {
-        "chassi": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "moto": marca3["moto"],
         "cor":marca3["cor"],
         "marca":marca3["marca"]
@@ -144,7 +144,7 @@ def excluir600():
     delete = request.json
     print(moto600)
     for dell in moto600:
-        if dell["chassi"] == delete["chassi"]:
+        if dell["id"] == delete["id"]:
             moto600.remove(dell)
             return delete
 
@@ -158,7 +158,7 @@ def motores1000():
         if modelo5["moto"] == marca4["moto"] and modelo5["marca"] == marca4["marca"]:
             return {"status": "veiculo já cadastrado."}
     marca4= {
-        "chassi": str(uuid.uuid4()),
+        "id": str(uuid.uuid4()),
         "moto": marca4["moto"],
         "cor":marca4["cor"],
         "marca":marca4["marca"]
@@ -171,7 +171,7 @@ def excluir1000():
     delete = request.json
     print(moto1000)
     for dell in moto1000:
-        if dell["chassi"] == delete["chassi"]:
+        if dell["id"] == delete["id"]:
             moto1000.remove(dell)
             return delete
 
